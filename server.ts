@@ -31,7 +31,7 @@ app.get("/typos/:pathname", async function (req, res) {
 
 app.get("/images/:pathname", async function (req, res) {
   const { params } = req;
-  const pathname = params?.pathname;
+  const pathname = params && params.pathname;
   const image = await makeTextImage(pathname);
   //   res.set("Content-Type", "img/jpg");
   //   res.send(image);
