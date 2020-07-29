@@ -1,4 +1,4 @@
-const makeTextImage = require("./makeImage");
+const makeTextImage = require("./makeImage.ts");
 
 const addTyposToString = require("./typos/addTyposToString");
 var express = require("express");
