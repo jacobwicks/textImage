@@ -1,6 +1,6 @@
-import makeTextImage from "./makeImage";
+const makeTextImage = require("./makeImage");
 
-import addTyposToString, { defaultSettings } from "./typos/addTyposToString";
+const addTyposToString = require("./typos/addTyposToString");
 var express = require("express");
 var app = express();
 
@@ -9,7 +9,7 @@ app.get("/typos/:pathname", async function (req, res) {
   const inputString = params?.pathname;
 
   const settings = {
-    ...defaultSettings,
+    ...addTyposToString.defaultSettings,
     extraCharacters: 40,
     frequency: 25,
     missedCharacters: 25,
