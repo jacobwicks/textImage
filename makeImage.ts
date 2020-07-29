@@ -1,6 +1,6 @@
 const { createCanvas } = require("canvas");
 
-const makeTextImage = async (input: string) => {
+async function makeTextImage(input: string) {
   const canvas = createCanvas(200, 200);
   // const ctx = canvas.getContext("2d");
   // var text = ctx.measureText(input);
@@ -13,6 +13,6 @@ const makeTextImage = async (input: string) => {
   // ctx.lineTo(50 + text.width, 102);
   // ctx.stroke();
   // return canvas.toBuffer();
-};
+}
 
 export default makeTextImage;
