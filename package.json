@@ -1,0 +1,28 @@
+{
+  "name": "textimage",
+  "version": "1.0.0",
+  "description": "A web server that generates an image containing text",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "canvas": "^2.6.1",
+    "express": "^4.17.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobwicks/textImage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobwicks/textImage/issues"
+  },
+  "homepage": "https://github.com/jacobwicks/textImage#readme"
+}
