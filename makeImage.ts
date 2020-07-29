@@ -1,7 +1,7 @@
 const { createCanvas } = require("canvas");
 
 const makeTextImage = async (input: string) => {
-  // const canvas = createCanvas(200, 200);
+  const canvas = createCanvas(200, 200);
   // const ctx = canvas.getContext("2d");
   // var text = ctx.measureText(input);
   // ctx.font = "30px Impact";
