@@ -6,7 +6,7 @@ var app = express();
 
 app.get("/typos/:pathname", async function (req, res) {
   const { params } = req;
-  const inputString = params?.pathname;
+  const inputString = params && params.pathname;
 
   const settings = {
     ...addTyposToString.defaultSettings,
